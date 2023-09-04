@@ -3,6 +3,7 @@ import psycopg2
 def create_car_color(db):
     cursor = db.cursor()
 
+    # list of car colors
     car_colors = [
         (1, "White"),
         (2, "Black"),
@@ -16,6 +17,7 @@ def create_car_color(db):
         (10, "Orange")
     ]
 
+    # create table query
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS CarColor (
             ColorID SERIAL PRIMARY KEY,
@@ -23,9 +25,11 @@ def create_car_color(db):
         )
     """)
 
+    # insert query
     insert_query = "INSERT INTO CarColor (ColorID, ColorName) VALUES (%s, %s)"
     cursor.executemany(insert_query, car_colors)
 
+    # commit the changes in database
     db.commit()
     cursor.close()
 
