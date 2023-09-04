@@ -1,5 +1,6 @@
 import psycopg2
 
+# function to create and populate CarCategory table
 def create_car_category(db):
     cursor = db.cursor()
 
@@ -11,6 +12,7 @@ def create_car_category(db):
         (5, "Sport")
     ]
 
+    # create table query
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS CarCategory (
             CategoryID SERIAL PRIMARY KEY,
@@ -18,9 +20,11 @@ def create_car_category(db):
         )
     """)
 
+    # insert query
     insert_query = "INSERT INTO CarCategory (CategoryID, CategoryName) VALUES (%s, %s)"
     cursor.executemany(insert_query, car_categories)
 
+    # commit the changes in database
     db.commit()
     cursor.close()
 
