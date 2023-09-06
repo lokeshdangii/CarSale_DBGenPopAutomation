@@ -80,7 +80,8 @@ Here is a link to my database schema. View it from [here](https://docs.google.co
 
 ## ER Diagram
 
-![ER Diagram](https://drive.google.com/drive/folders/1--omhiAKBSStZOxVnZHsD9zIXlWoCw4G)
+<img src="https://github.com/lokeshdangii/CarSale_DBGenPopAutomation/raw/main/ER_Diagram.png" alt="ER Diagram" width="500">
+
 
 ## Conclusion
 
