@@ -3,6 +3,7 @@ import psycopg2
 def create_car_engine(db):
     cursor = db.cursor()
 
+    # pre-defined engine names because faket do not generate engine names we want
     car_engines = [
         (1, "Gasoline"),
         (2, "Diesel"),
@@ -10,6 +11,7 @@ def create_car_engine(db):
         (4, "Hybrid")
     ]
 
+    # create table query
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS CarEngine (
             EngineID SERIAL PRIMARY KEY,
@@ -17,6 +19,7 @@ def create_car_engine(db):
         )
     """)
 
+    # insert query
     insert_query = "INSERT INTO CarEngine (EngineID, EngineName) VALUES (%s, %s)"
     cursor.executemany(insert_query, car_engines)
 
