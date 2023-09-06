@@ -39,7 +39,7 @@ def create_car(db):
     """)
 
     car_data = []
-    for _ in range(151):
+    for _ in range(101):
         car_data.append((random.randint(1, 8), random.randint(1, 5), random.randint(1, 4),
                         random.randint(1, 10), random.randint(1, 15), fake.unique.random_int(min=10000000000000000, max=99999999999999999),
                         random.randint(12, 30), random.randint(2000, 2023), fake.company()))
