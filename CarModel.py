@@ -13,6 +13,7 @@ def create_car_model(db):
         "Tesla Model S", "Kia Sportage", "Hyundai Elantra", "Mazda CX-5", "Audi A4"
     ]
 
+    
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS CarModel (
             ModelID SERIAL PRIMARY KEY,
