@@ -95,8 +95,4 @@ Feel free to contribute by submitting error and feature requests through the [Gi
 
 You can reach me via email at [lokeshdangi1045@gmail.com](mailto:lokeshdangi1045@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/lokeshdangi/)
 
-## License
-
-This project is licensed under the MIT License. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 Thank you for visiting my repository!
