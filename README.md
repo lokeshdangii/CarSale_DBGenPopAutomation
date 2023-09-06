@@ -78,6 +78,10 @@ This script automatically creates database tables and populates them with data u
 
 Here is a link to my database schema. View it from [here](https://docs.google.com/spreadsheets/d/142qSCSo7DvzJm0dkXzN0Z9ECH6Y3db7tqqDw3qo8G8s/edit#gid=0).
 
+## ER Diagram
+
+![ER Diagram](https://drive.google.com/drive/folders/1--omhiAKBSStZOxVnZHsD9zIXlWoCw4G)
+
 ## Conclusion
 
 This project showcases the power of automation in database setup and data population for a car dealership management system. By utilizing Python scripts, Faker library, and psycopg2, we have successfully streamlined the process, enabling consistent, efficient, and error-free database creation and population.
